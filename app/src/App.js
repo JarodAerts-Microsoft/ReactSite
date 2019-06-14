@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Testing the github webhooks stuff. Hopefully things work. Testing again.
+          Learn React.
         </a>
       </header>
     </div>
