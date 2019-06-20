@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Testing push on another branch. Doidfddfng more testing
+          Testing push on another branch. Doidfddfg more testing
         </p>
         <a
           className="App-link"
