@@ -18,12 +18,7 @@ function App() {
         >
           Learn React.
         </a>
-        <a 
-          className="App-link"
-          href="https://arcadian-iguana-690.azurestaticwebsites.net/.auth/login/aad"
-        >
-          Log in with Azure AD
-        </a>
+
       </header>
     </div>
   );
