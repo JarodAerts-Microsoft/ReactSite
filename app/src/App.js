@@ -20,7 +20,7 @@ function App() {
         </a>
         <a 
           className="App-link"
-          href="https://cerulean-iguana-839.azurestaticwebsites.net/.auth/login/aad"
+          href="https://authentication.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=content-river-1DA7931E.mitalikarmarkar.net"
         >
         Log in with Azure AD
         </a>
