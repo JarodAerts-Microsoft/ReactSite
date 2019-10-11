@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build And Deploy
       id: azurepagesbuilddeploy
-      uses: mkarmark/basic-deploy-task@master
+      uses: joslinmicrosoft/basic-deploy-task@master
       with:
         azure_pages_buildhost: 'buildsystem2.azurewebsites.net'
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN }}        
