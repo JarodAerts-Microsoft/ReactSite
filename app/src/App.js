@@ -20,9 +20,9 @@ function App() {
         </a>
         <a 
           className="App-link"
-          href="https://authentication.mitalikarmarkar.net/.auth/login/aad?post_login_redirect_uri=content-river-1DA7931E.mitalikarmarkar.net"
+          href="https://authentication.mitalikarmarkar.net/.auth/login/fb?post_login_redirect_uri=content-river-1DA7931E.mitalikarmarkar.net"
         >
-        Log in with Azure AD - Mitali change5 - see the build system works - 10/15 12:13pm!
+        Log in with Facebook - Mitali change - see the build system works - 10/15 5:55pm!
         </a>
 
       </header>
