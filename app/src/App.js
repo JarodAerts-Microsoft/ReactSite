@@ -20,9 +20,9 @@ function App() {
         </a>
         <a 
           className="App-link"
-          href="https://authentication.mitalikarmarkar.net/.auth/login/fb?post_login_redirect_uri=content-river-1DA7931E.mitalikarmarkar.net"
+          href="https://authentication.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=serene-evergreen-1262eeae.mitalikarmarkar.net"
         >
-        Log in with Facebook - Mitali change - see the build system works - 10/15 5:55pm!
+        Log in with Facebook - Mitali change - see the build system works - 10/16 12:30pm!
         </a>
 
       </header>
