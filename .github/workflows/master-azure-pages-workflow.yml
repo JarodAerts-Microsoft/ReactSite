@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build And Deploy
       id: azurepagesbuilddeploy
-      uses: joslinmicrosoft/basic-deploy-task@master
+      uses: joslinmicrosoft/basic-deploy-task@temp
       with:
         azure_pages_buildhost: 'buildsystem3.azurewebsites.net'
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN }}
