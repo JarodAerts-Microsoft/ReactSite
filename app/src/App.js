@@ -22,7 +22,7 @@ function App() {
           className="App-link"
           href="https://authentication.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=serene-evergreen-1262eeae.mitalikarmarkar.net"
         >
-        Log in with Facebook - Mitali change - see the build system works - 10/30 3:20pm!
+        Log in with Facebook - Mitali change - see the build system works - 11/1 10:27am!
         </a>
 
       </header>
