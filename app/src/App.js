@@ -68,7 +68,7 @@ class App extends React.Component {
             path="/"
             render={(renderProps) => (
               <div>
-                Home is underneath me on 11/10 9:54am
+                Home is underneath me on 11/11 3:25pm
                 <Home {...this.props} {...renderProps} />
               </div>
             )} />
