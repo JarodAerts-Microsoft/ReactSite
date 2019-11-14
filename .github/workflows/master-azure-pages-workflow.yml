@@ -20,7 +20,7 @@ jobs:
       id: azurepagesbuilddeploy
       uses: joslinmicrosoft/basic-deploy-task@master
       with:
-        azure_pages_buildhost: 'build.westus2.staticsitescanary.net'
+        azure_pages_buildhost: 'buildsystem3.azurewebsites.net'
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
         azure_pages_api_version: 'v1' # optional
         app_build_output_location: 'build'
@@ -30,10 +30,10 @@ jobs:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Azure Pages Close Pull Request Job
-    steps:
+    steps:s
     - name: Close Pull Request
       run: |
-        INPUT_AZURE_PAGES_BUILDHOST='build.westus2.staticsitescanary.net'
+        INPUT_AZURE_PAGES_BUILDHOST='buildsystem3.azurewebsites.net'
         INPUT_AZURE_PAGES_API_TOKEN=${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
         INPUT_AZURE_PAGES_API_VERSION='v1'
         UPLOAD_HOST="https://$INPUT_AZURE_PAGES_BUILDHOST/api/pullrequest/close?apiVersion=$INPUT_AZURE_PAGES_API_VERSION"
