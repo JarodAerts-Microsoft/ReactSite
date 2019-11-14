@@ -40,7 +40,7 @@ import {
 // export default App;
 
 // const Home = () => (<div><h1>Welcome home</h1></div>)
-const Home = () => (<div><h1>Welcome CANARY</h1><Link to='/about'>Go to about</Link></div>)
+const Home = () => (<div><h1>Welcome MITALI</h1><Link to='/about'>Go to about</Link></div>)
 const About = ({ name }) => (<div><h1>About {name}</h1></div>)
 
 class App extends React.Component {
@@ -68,7 +68,7 @@ class App extends React.Component {
             path="/"
             render={(renderProps) => (
               <div>
-                Home is underneath me on 11/13 6:00pm
+                Home is underneath me on 11/13 6:14pm
                 <Home {...this.props} {...renderProps} />
               </div>
             )} />
