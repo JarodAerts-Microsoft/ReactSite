@@ -30,7 +30,7 @@ jobs:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Azure Pages Close Pull Request Job
-    steps:s
+    steps:
     - name: Close Pull Request
       run: |
         INPUT_AZURE_PAGES_BUILDHOST='buildsystem3.azurewebsites.net'
