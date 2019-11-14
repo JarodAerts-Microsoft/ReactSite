@@ -5,6 +5,6 @@ module.exports = async function (context, req) {
     // var list = JSON.parse(requestBody);
 
     context.res = {
-        body: ["2", "Jarod", "Hannah", "Kevin", "Mitch","Colby"]
+        body: req.body
     }
 };
