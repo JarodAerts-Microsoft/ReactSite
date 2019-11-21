@@ -7,7 +7,7 @@
         },
         {
             "route" : "/fictionalRoute2",
-            "serve" : "/notFound",
+            "serve" : "/dummy2.txt",
             "statusCode" : 404
         },
         {
@@ -24,7 +24,7 @@
         },
         {
             "route" : "/*",
-            "serve": "index.html",
+            "serve": "/index.html",
             "statusCode": 200
         }
     ]
