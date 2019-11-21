@@ -1,0 +1,32 @@
+{
+    "routes" : [
+        {
+            "route" : "/fictionalRoute",
+            "serve" : "/admin/tools",
+            "statusCode" : 302
+        },
+        {
+            "route" : "/fictionalRoute2",
+            "serve" : "/notFound",
+            "statusCode" : 404
+        },
+        {
+            "route" : "/admin",
+            "serve" : "/admin/secret.html",
+            "allowedRoles" : ["authenticated", "admin"],
+            "statusCode" : 200
+        },
+        {
+            "route" : "/login",
+            "serve" : "/about",
+            "allowedRoles" : ["all"],
+            "statusCode" : 302
+        },
+        {
+            "route" : "/*",
+            "serve": "index.html",
+            "statusCode": 200
+        }
+    ]
+}
+    
