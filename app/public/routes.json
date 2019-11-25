@@ -1,26 +1,31 @@
 {
     "routes" : [
         {
-            "route" : "/fictionalRoute",
+            "route" : "/fictionalRoute/",
             "serve" : "/admin/tools",
             "statusCode" : 302
         },
         {
-            "route" : "/fictionalRoute2",
+            "route" : "/fictionalRoute2/",
             "serve" : "/dummy2.txt",
             "statusCode" : 404
         },
         {
-            "route" : "/admin",
+            "route" : "/admin/",
             "serve" : "/admin/secret.html",
             "allowedRoles" : ["authenticated", "admin"],
             "statusCode" : 200
         },
         {
-            "route" : "/login",
+            "route" : "/login/",
             "serve" : "/about",
             "allowedRoles" : ["all"],
             "statusCode" : 302
+        },
+        {
+            "route" : "/about/*",
+            "serve": "/about/",
+            "statusCode": 200
         },
         {
             "route" : "/*",
