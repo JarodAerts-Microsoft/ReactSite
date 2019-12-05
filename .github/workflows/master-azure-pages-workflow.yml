@@ -33,7 +33,7 @@ jobs:
     steps:
     - name: Close Pull Request
       run: |
-        INPUT_AZURE_PAGES_BUILDHOST='buildsystem3.azurewebsites.net'
+        INPUT_AZURE_PAGES_BUILDHOST='mikarmarcontentdist.azurewebsites.net'
         INPUT_AZURE_PAGES_API_TOKEN=${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
         INPUT_AZURE_PAGES_API_VERSION='v1'
         UPLOAD_HOST="https://$INPUT_AZURE_PAGES_BUILDHOST/api/pullrequest/close?apiVersion=$INPUT_AZURE_PAGES_API_VERSION"
