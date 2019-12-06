@@ -20,7 +20,7 @@ jobs:
       id: azurepagesbuilddeploy
       uses: joslinmicrosoft/basic-deploy-task@master
       with:
-        azure_pages_buildhost: 'buildsystem3.azurewebsites.net'
+        azure_pages_buildhost: 'mikarmarcontentdist.azurewebsites.net'
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
         azure_pages_api_version: 'v1' # optional
         app_build_output_location: 'build'
