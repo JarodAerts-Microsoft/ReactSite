@@ -11,16 +11,22 @@
             "allowedRoles" : ["sleepy"],
             "statusCode" : 404
         },
+        {
+            "route" : "/fictionalRoute3/",
+            "serve" : "/dummy2.txt",
+            "allowedRoles" : ["sleepy2"],
+            "statusCode" : 404
+        },
         {
             "route" : "/admin/",
-            "serve" : "/admin/secret.html",
+            "serve" : "/dummy2.txt",
             "allowedRoles" : ["authenticated", "admin"],
             "statusCode" : 200
         },
         {
             "route" : "/login/",
             "serve" : "/about",
-            "allowedRoles" : ["all"],
+            "allowedRoles" : ["anonymous"],
             "statusCode" : 302
         },
         {
