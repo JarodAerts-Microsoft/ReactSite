@@ -8,6 +8,7 @@
         {
             "route" : "/fictionalRoute2/",
             "serve" : "/dummy2.txt",
+            "allowedRoles" : ["sleepy"],
             "statusCode" : 404
         },
         {
