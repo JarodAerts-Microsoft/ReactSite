@@ -39,7 +39,7 @@ import {
 
 // export default App;
 
-const Home = () => (<div><h1>Welcome home</h1></div>)
+// const Home = () => (<div><h1>Welcome home</h1></div>)
 const Home = () => (<div><h1>Welcome MITALI</h1><Link to='/about'>Go to about</Link></div>)
 const About = ({ name }) => (<div><h1>About {name}</h1></div>)
 
