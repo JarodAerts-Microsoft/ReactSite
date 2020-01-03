@@ -18,29 +18,22 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build And Deploy
       id: azurepagesbuilddeploy
-      uses: joslinmicrosoft/basic-deploy-task@master
+      uses: joslinmicrosoft/staticsitesactionoryx@master
       with:
-        azure_pages_buildhost: 'mikarmarcontentdist.azurewebsites.net'
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
-        azure_pages_api_version: 'v1' # optional
-        app_build_output_location: 'build'
+        action: 'upload'
         app_source_location: 'app' # optional
-        azure_function_location: 'api' # optional
+        api_source_location: 'api' # optional
+        app_artifact_location: 'build'
   azure_pages_close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Azure Pages Close Pull Request Job
     steps:
+    - uses: actions/checkout@v1
     - name: Close Pull Request
-      run: |
-        INPUT_AZURE_PAGES_BUILDHOST='mikarmarcontentdist.azurewebsites.net'
-        INPUT_AZURE_PAGES_API_TOKEN=${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
-        INPUT_AZURE_PAGES_API_VERSION='v1'
-        UPLOAD_HOST="https://$INPUT_AZURE_PAGES_BUILDHOST/api/pullrequest/close?apiVersion=$INPUT_AZURE_PAGES_API_VERSION"
-        curl -v -H "Authorization: token $INPUT_AZURE_PAGES_API_TOKEN" -F "event=@$GITHUB_EVENT_PATH" $UPLOAD_HOST
-        if [ 0 -eq $? ]; then
-          echo "Successfully uploaded webhook information"
-        else
-          echo "Failed to upload webhook information"
-          exit 1
-        fi;
+      id: azurepagesclosepullrequest
+      uses: joslinmicrosoft/staticsitesactionoryx@master
+      with:
+        azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
+        action: 'close'
