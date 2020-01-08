@@ -3,7 +3,7 @@
         {
             "route" : "/fictionalRoute/",
             "serve" : "/admin/tools",
-            "statusCode" : 302
+            "statusCode" : 200
         },
         {
             "route" : "/fictionalRoute2/",
