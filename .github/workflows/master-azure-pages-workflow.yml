@@ -22,7 +22,7 @@ jobs:
       with:
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
         action: 'upload'
-        app_source_location: 'app --verbose=true' # optional
+        app_source_location: 'app' # optional
         api_source_location: 'api' # optional
         app_artifact_location: 'build'
   azure_pages_close_pull_request_job:
