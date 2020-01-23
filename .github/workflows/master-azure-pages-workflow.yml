@@ -36,4 +36,4 @@ jobs:
       uses: mkarmark/staticstiesactionoryx@master
       with:
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
-        action: 'close
+        action: 'close'
