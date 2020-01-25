@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build And Deploy
       id: azurepagesbuilddeploy
-      uses: mkarmark/staticstiesactionoryx@master
+      uses: joslinmicrosoft/staticsitesactionoryx@master
       with:
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
         action: 'upload'
@@ -30,10 +30,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Azure Pages Close Pull Request Job
     steps:
-    - uses: actions/checkout@v1
     - name: Close Pull Request
       id: azurepagesclosepullrequest
-      uses: mkarmark/staticstiesactionoryx@master
+      uses: joslinmicrosoft/staticsitesactionoryx@master
       with:
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
         action: 'close'
