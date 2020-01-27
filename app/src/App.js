@@ -68,7 +68,7 @@ class App extends React.Component {
             path="/"
             render={(renderProps) => (
               <div>
-                Home is underneath me on 1/27 12:59pm
+                Home is underneath me on 1/27 1:02pm
                 <Home {...this.props} {...renderProps} />
                 <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=gray-sky-10e8573e.mitalikarmarkar.net/admin">Login</a>
                 <a href="https:/gray-sky-10e8573e.mitalikarmarkar.net/admin">Guarded link</a>
