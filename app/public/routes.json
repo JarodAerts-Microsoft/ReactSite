@@ -1,33 +1,21 @@
 {
     "routes" : [
         {
-            "route" : "/fictionalRoute/",
-            "serve" : "/admin/tools",
-            "statusCode" : 200
-        },
-        {
-            "route" : "/fictionalRoute2/",
+            "route" : "/dummy/",
             "serve" : "/dummy2.txt",
-            "allowedRoles" : ["sleepy"],
             "statusCode" : 404
         },
         {
-            "route" : "/fictionalRoute3/",
-            "serve" : "/dummy2.txt",
-            "allowedRoles" : ["sleepy2"],
-            "statusCode" : 404
-        },
-        {
             "route" : "/admin/",
-            "serve" : "/dummy2.txt",
-            "allowedRoles" : ["authenticated", "admin"],
+            "serve" : "/admin/",
+            "allowedRoles" : ["admin"],
             "statusCode" : 200
         },
         {
-            "route" : "/login/",
-            "serve" : "/about",
-            "allowedRoles" : ["anonymous"],
-            "statusCode" : 302
+            "route" : "/authenticated/",
+            "serve" : "/authenticated/",
+            "allowedRoles" : ["authenticated"],
+            "statusCode" : 200
         },
         {
             "route" : "/about/*",

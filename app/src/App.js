@@ -49,29 +49,14 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route
-            path="/about"
-            render={(renderProps) => (
-              <div>
-                <Link to='/about/ari'>Ari</Link>
-                <Link to='/about/nate'>Nate</Link>
-                <Route
-                  path="/about/:name"
-                  render={(renderProps) => (
-                    <div>
-                      <About name={renderProps.match.params.name} />
-                      <Link to='/'>Go home</Link>
-                    </div>
-                  )} />
-              </div>
-            )} />
-          <Route
             path="/"
             render={(renderProps) => (
               <div>
-                Home is underneath me on 1/27 1:02pm
+                Last update made on 1/27/2020 2:12pm
                 <Home {...this.props} {...renderProps} />
-                <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=gray-sky-10e8573e.mitalikarmarkar.net/admin">Login</a>
-                <a href="https:/gray-sky-10e8573e.mitalikarmarkar.net/admin">Guarded link</a>
+                <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/.auth/login/facebook">Login and return to this page</a>
+                <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=gray-sky-10e8573e.mitalikarmarkar.net/authenticated">Authenticated page</a>
+                <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=gray-sky-10e8573e.mitalikarmarkar.net/admin">Admin page</a>
               </div>
             )} />
         </Switch>
