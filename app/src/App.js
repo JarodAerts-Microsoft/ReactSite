@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 import {
   BrowserRouter as Router,
@@ -52,11 +53,11 @@ class App extends React.Component {
             path="/"
             render={(renderProps) => (
               <div>
-                Last update made on 2/3/2020 11:06am
+                Last update made on 2/3/2020 4:30 pm
                 <Home {...this.props} {...renderProps} />
-                <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/.auth/login/facebook">Login and return to this page</a>
-                <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=gray-sky-10e8573e.mitalikarmarkar.net/authenticated">Authenticated page</a>
-                <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=gray-sky-10e8573e.mitalikarmarkar.net/admin">Admin page</a>
+                <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/.auth/login/facebook">Login and return to this page</a>
+                <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/authenticated">Authenticated page</a>
+                <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/admin">Admin page</a>
               </div>
             )} />
         </Switch>
