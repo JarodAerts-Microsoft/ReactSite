@@ -41,8 +41,8 @@ import {
 // export default App;
 
 // const Home = () => (<div><h1>Welcome home</h1></div>)
-const Home = () => (<div><h1>Welcome MITALI</h1><Link to='/about'>Go to about</Link></div>)
-const About = ({ name }) => (<div><h1>About {name}</h1></div>)
+// const Home = () => (<div><h1>Welcome MITALI</h1><Link to='/about'>Go to about</Link></div>)
+// const About = ({ name }) => (<div><h1>About {name}</h1></div>)
 
 class App extends React.Component {
   render() {
@@ -52,12 +52,48 @@ class App extends React.Component {
           <Route
             path="/"
             render={(renderProps) => (
-              <div>
-                Last update made on 2/3/2020 4:30 pm
-                <Home {...this.props} {...renderProps} />
-                <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/.auth/login/facebook">Login and return to this page</a>
-                <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/authenticated">Authenticated page</a>
-                <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/admin">Admin page</a>
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="col-4">
+                    Marmelade
+                  </div>
+
+                  <div class="col-4">
+                    <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/.auth/login/facebook">Login and return to this page</a>
+                  </div>
+                </div>
+                <div class="row">
+                    This is a test React app to test the MSHA.
+                </div>
+                <div class="row">
+                    This app was last updated 2/3/20 4:54pm
+                </div>
+                <div class="row">
+                    Login first, then try to access authenticated and admin content.
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-6">
+                    Must be logged in to access this link
+                  </div>
+
+                  <div class="col-2">
+                    <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/authenticated">Authenticated page</a>
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="col-6">
+                    Must have "admin" role to access this link
+                  </div>
+
+                  <div class="col-2">
+                  <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/admin">Admin page</a>
+                  </div>
+                </div>
+                
+                {/* <Home {...this.props} {...renderProps} /> */}
+                
               </div>
             )} />
         </Switch>
