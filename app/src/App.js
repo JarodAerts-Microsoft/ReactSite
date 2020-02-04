@@ -17,21 +17,6 @@ import { useCookies } from 'react-cookie';
 // const Home = () => (<div><h1>Welcome MITALI</h1><Link to='/about'>Go to about</Link></div>)
 // const About = ({ name }) => (<div><h1>About {name}</h1></div>)
 
-
-const [cookies, setCookie] = useCookies(['StaticSitesAuthCookie']);
-
-function Test() {
-  const [cookies, setCookie] = useCookies(['StaticSitesAuthCookie']);
-
-  if (cookies.StaticSitesAuthCookie == "")
-      {
-        return (<div>Log in</div>);
-      }
-      else  {
-        return (<div>Logged in</div>);
-      }
-}
-
 class App extends React.Component {
 
   render() {
@@ -50,7 +35,7 @@ class App extends React.Component {
                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/.auth/login/facebook">{Test()}</a>
+                      <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/.auth/login/facebook"><Home {...this.props} {...renderProps} /></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/authenticated">Authenticated</a>
