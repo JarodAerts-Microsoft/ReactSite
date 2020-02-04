@@ -52,45 +52,34 @@ class App extends React.Component {
           <Route
             path="/"
             render={(renderProps) => (
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Marmelade</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/.auth/login/facebook">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/authenticated">Authenticated</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/admin">Admin</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
               <div class="container">
-                <div class="row justify-content-between">
-                  <div class="col-4">
-                    Marmelade
-                  </div>
-
-                  <div class="col-4">
-                    <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/.auth/login/facebook">Login and return to this page</a>
-                  </div>
+                <div class="jumbotron">
+                  <h1>Project Marmelade</h1>
+                  <p>Test app</p>
                 </div>
-                <div class="row">
-                    This is a test React app to test the MSHA.
-                </div>
-                <div class="row">
-                    This app was last updated 2/3/20 4:54pm
-                </div>
-                <div class="row">
-                    Login first, then try to access authenticated and admin content.
-                </div>
-
-                <div class="row justify-content-between">
-                  <div class="col-6">
-                    Must be logged in to access this link
-                  </div>
-
-                  <div class="col-2">
-                    <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/authenticated">Authenticated page</a>
-                  </div>
-                </div>
-
-                <div class="row justify-content-between">
-                  <div class="col-6">
-                    Must have "admin" role to access this link
-                  </div>
-
-                  <div class="col-2">
-                  <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/admin">Admin page</a>
-                  </div>
-                </div>
+                <p>This is a test React app to test the MSHA.</p>
+                <p>This app was last updated 2/3/20 4:54pm.</p>
+                <p>Login first, then try to access authenticated and admin content.</p>
+                
                 
                 {/* <Home {...this.props} {...renderProps} /> */}
                 
