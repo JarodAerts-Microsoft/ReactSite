@@ -20,27 +20,36 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Admin</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>ADMIN</h1>
-    <h3>
-    This content is restricted to users that have the admin role.
-    If you are seeing this, that means you have been granted admin privileges.
-    </h3>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <br/>
-    <br/>
-    <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/.auth/logout">Click here if you want to log out</a>
-    <br/>
-    <a href="https://gray-sky-10e8573e.mitalikarmarkar.net/">Click here if you want to go to the main page without logging out</a>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Marmelade</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/.auth/logout">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/authenticated">Authenticated</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/admin">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        <div class="jumbotron">
+          <h1>Admin page</h1>
+          <p>You can only see this page if you have the "admin" role</p>
+        </div>
+    </div>
   </body>
 </html>
