@@ -52,6 +52,7 @@ class App extends React.Component {
           <Route
             path="/"
             render={(renderProps) => (
+              <div>
               <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Marmelade</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -84,6 +85,7 @@ class App extends React.Component {
                 {/* <Home {...this.props} {...renderProps} /> */}
                 
               </div>
+            </div>
             )} />
         </Switch>
       </Router>
