@@ -5,6 +5,11 @@
             "serve" : "/dummy2.txt",
             "statusCode" : 404
         },
+            {
+                    "route": "/.api/GetList",
+                    "serve": "/.api/GetList",
+                    "allowedRoles": ["authenticated"]
+            },
         {
             "route" : "/admin/",
             "serve" : "/admin/",
