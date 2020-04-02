@@ -22,8 +22,11 @@ jobs:
       with:
         azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_MASTER }}
         action: 'upload'
-        app_artifact_location: 'app' # App Content Path
-        api_artifact_location: 'api' # Api Content Path - optional
+        ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
+        app_location: '/' # App source code path
+        api_location: 'api' # Api source code path - optional
+        app_artifact_location: '' # Built app content directory - optional
+        ###### End of Repository/Build Configurations ######
   
   azure_pages_close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
