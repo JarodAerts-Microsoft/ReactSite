@@ -1,13 +1,12 @@
 {
   "bindings": [
     {
-      "authLevel": "admin",
+      "authLevel": "anonymous",
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
       "methods": [
-        "get",
-        "post"
+        "get"
       ],
 	  "route": "GetList"
     },
