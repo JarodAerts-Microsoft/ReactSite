@@ -3,6 +3,6 @@ module.exports = async function (context, req) {
 
     context.res = {
         headers: { 'foobar': 'baz'},
-        body: ["1", "Jarod", "Hannah", "Kevin", "Mitch","Colby"]
+        body: ["234", "Jarod", "Hannah", "Kevin", "Mitch","Colby"]
     }
 };
