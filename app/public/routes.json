@@ -31,7 +31,19 @@
             "route" : "/*",
             "serve": "/index.html",
             "statusCode": 200
-        }
+        },
+                {
+                            "route" : "/.auth/login/google",
+                            "statusCode": 400
+                },
+                {
+                            "route" : "/.auth/login/github",
+                            "statusCode": 429
+                },
+                {
+                            "route": "/login",
+                            "serve": "/.auth/login/facebook"
+                }
     ]
 }
     
