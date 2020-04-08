@@ -27,11 +27,7 @@
             "serve": "/about/",
             "statusCode": 200
         },
-        {
-            "route" : "/*",
-            "serve": "/index.html",
-            "statusCode": 200
-        },
+        
                 {
                             "route" : "/.auth/login/google",
                             "statusCode": 400
@@ -43,7 +39,12 @@
                 {
                             "route": "/login",
                             "serve": "/.auth/login/facebook"
-                }
+                },
+                {
+            "route" : "/*",
+            "serve": "/index.html",
+            "statusCode": 200
+        }
     ]
 }
     
