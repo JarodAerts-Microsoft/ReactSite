@@ -41,6 +41,10 @@
                             "serve": "/.auth/login/facebook"
                 },
                 {
+                            "route": "/logout",
+                            "serve": "/.auth/logout"
+                },
+                {
             "route" : "/*",
             "serve": "/index.html",
             "statusCode": 200
