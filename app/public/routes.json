@@ -53,8 +53,13 @@
     ],
             "customErrorRoutes": [
                         {
-                                    "type": "Unauthorized",
+                                    "type": "Unauthorized_NoUser",
                                     "serve": "/about/index.html",
+                                    "statusCode": 200
+                        },
+                        {
+                                    "type": "Unauthorized_MissingRoles",
+                                    "serve": "/dummy2.txt",
                                     "statusCode": 200
                         }
                         ]
