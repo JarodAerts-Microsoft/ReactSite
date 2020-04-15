@@ -51,7 +51,7 @@
             "statusCode": 200
         }
     ],
-            "customErrorRoutes": [
+            "customErrorRules": [
                         {
                                     "type": "Unauthorized_NoUser",
                                     "serve": "/about/index.html",
