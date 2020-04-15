@@ -49,6 +49,13 @@
             "serve": "/index.html",
             "statusCode": 200
         }
-    ]
+    ],
+            "customErrorRoutes": [
+                        {
+                                    "type": "Unauthorized",
+                                    "serve": "/about/index.html",
+                                    "statusCode": 205
+                        }
+                        ]
 }
     
