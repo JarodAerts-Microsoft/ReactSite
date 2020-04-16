@@ -51,9 +51,9 @@
             "statusCode": 200
         }
     ],
-            "customErrorRules": [
+            "platformErrorOverrides": [
                         {
-                                    "type": "Unauthorized_NoUser",
+                                    "type": "Unauthenticated",
                                     "serve": "/about/index.html",
                                     "statusCode": 200
                         },
