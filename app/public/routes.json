@@ -54,13 +54,11 @@
             "platformErrorOverrides": [
                         {
                                     "errorType": "Unauthenticated",
-                                    "serve": "/about/index.html",
                                     "statusCode": 200
                         },
                         {
                                     "errorType": "Unauthorized_MissingRoles",
-                                    "serve": "/dummy2.txt",
-                                    "statusCode": 200
+                                    "serve": "/dummy2.txt"
                         }
                         ]
 }
