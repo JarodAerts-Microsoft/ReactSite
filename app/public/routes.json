@@ -1,65 +1,41 @@
-{
-    "routes" : [
-        {
-            "route" : "/dummy/",
-            "serve" : "/dummy2.txt",
-            "statusCode" : 404
-        },
-            {
-                    "route": "/.api/GetList",
-                    "serve": "/.api/GetList",
-                    "allowedRoles": ["authenticated"]
-            },
-        {
-            "route" : "/admin/",
-            "serve" : "/admin/",
-            "allowedRoles" : ["admin"],
-            "statusCode" : 200
-        },
-        {
-            "route" : "/authenticated/",
-            "serve" : "/authenticated/",
-            "allowedRoles" : ["authenticated"],
-            "statusCode" : 200
-        },
-        {
-            "route" : "/about/*",
-            "serve": "/about/",
-            "statusCode": 200
-        },
-        
-                {
-                            "route" : "/.auth/login/google",
-                            "statusCode": 400
-                },
-                {
-                            "route" : "/.auth/login/github",
-                            "serve" : "/dummy2.txt",
-                            "statusCode": 429
-                },
-                {
-                            "route": "/login",
-                            "serve": "/.auth/login/facebook"
-                },
-                {
-                            "route": "/logout",
-                            "serve": "/.auth/logout"
-                },
-                {
-            "route" : "/*",
-            "serve": "/index.html",
-            "statusCode": 200
-        }
-    ],
-            "platformErrorOverrides": [
-                        {
-                                    "errorType": "Unauthenticated",
-                                    "statusCode": 200
-                        },
-                        {
-                                    "errorType": "Unauthorized_MissingRoles",
-                                    "serve": "/dummy2.txt"
-                        }
-                        ]
-}
-    
+{ 
+  "routes": [ 
+    {
+      "route": "/login",
+      "serve": "/.auth/login/github"
+    },
+    {
+      "route": "/logout",
+      "serve": "/.auth/logout"
+    },
+    {
+      "route": "/.auth/login/github",
+      "statusCode": "404"
+    },
+    {
+      "route": "/.auth/login/aad",
+      "statusCode": "404"
+    },
+    {
+      "route": "/.auth/login/facebook",
+      "statusCode": "404"
+    },
+    {
+      "route": "/.auth/login/twitter",
+      "statusCode": "404"
+    },
+    {
+      "route": "/.auth/login/google",
+      "statusCode": "404"
+    },
+    {
+      "route": "/api/*",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/*", 
+      "serve": "/index.html", 
+      "statusCode": 200 
+    }
+  ] 
+} 
