@@ -30,7 +30,7 @@
     },
     {
       "route": "/api/*",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["authenticated", "admin"]
     },
     {
       "route": "/*", 
