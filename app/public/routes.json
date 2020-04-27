@@ -25,6 +25,21 @@
       "statusCode": "404"
     },
     {
+      "route": "/foo"
+      "statusCode": "200",
+      "serve": "/about"
+    },
+    {
+      "route": "/bar"
+      "statusCode": "301",
+      "serve": "/about"
+    },
+    {
+      "route": "/baz"
+      "statusCode": "302",
+      "serve": "/about"
+    },
+    {
       "route": "/api/*",
       "allowedRoles": ["authenticated", "admin"]
     },
