@@ -25,17 +25,17 @@
       "statusCode": "404"
     },
     {
-      "route": "/foo"
+      "route": "/foo",
       "statusCode": "200",
       "serve": "/about"
     },
     {
-      "route": "/bar"
+      "route": "/bar",
       "statusCode": "301",
       "serve": "/about"
     },
     {
-      "route": "/baz"
+      "route": "/baz",
       "statusCode": "302",
       "serve": "/about"
     },
