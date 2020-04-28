@@ -45,6 +45,11 @@
       "serve": "/about"
     },
     {
+      "route": "/admin",
+      "statusCode": "200",
+      "serve": "/admin"
+    },
+    {
       "route": "/api/*",
       "allowedRoles": ["authenticated", "admin"]
     },
