@@ -21,10 +21,6 @@
       "statusCode": "404"
     },
     {
-      "route": "/.auth/login/google",
-      "statusCode": "404"
-    },
-    {
       "route": "/foo",
       "statusCode": "200",
       "serve": "/about"
