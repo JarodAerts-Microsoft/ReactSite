@@ -13,10 +13,6 @@
       "statusCode": "404"
     },
     {
-      "route": "/.auth/login/facebook",
-      "statusCode": "404"
-    },
-    {
       "route": "/.auth/login/twitter",
       "statusCode": "404"
     },
