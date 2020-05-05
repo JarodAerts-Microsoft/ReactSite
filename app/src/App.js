@@ -74,7 +74,7 @@ class App extends React.Component {
                   <h1>Project Marmelade</h1>
                   <p>Test app</p>
                 </div>
-                <p>This is a test React app to test the MSHA.</p>
+                <p>This is a test PR2 React app to test the MSHA.</p>
                 <p>This app was last updated 4/8/20 2:16pm.</p>
                 <p>Login first, then try to access authenticated and admin content.</p>
                 
