@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Recipes from './ShoppingList';
+import ShoppingList from './ShoppingList';
 
 import {
   BrowserRouter as Router,
