@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import Recipes from './ShoppingList';
 
 import {
   BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom'
+
 
 class App extends React.Component {
   render() {
@@ -30,9 +32,6 @@ class App extends React.Component {
                     <li class="nav-item">
                       <a class="nav-link" href="/about">Authenticated Content</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/api/GetList">Function Content</a>
-                    </li>
                   </ul>
                 </div>
               </nav>
@@ -44,6 +43,7 @@ class App extends React.Component {
                 <p>This app was last updated 5/14/20 10:23pm.</p>                
             </div>
             )} />
+          <Route path="/shoppingList/" component={ShoppingList}/>
         </Switch>
       </Router>
     )
