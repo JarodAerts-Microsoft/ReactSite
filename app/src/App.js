@@ -30,6 +30,9 @@ class App extends React.Component {
                     <li class="nav-item">
                       <a class="nav-link" href="/about">Authenticated Content</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/api/GetList">Function Content</a>
+                    </li>
                   </ul>
                 </div>
               </nav>
