@@ -5,6 +5,11 @@
       "serve": "/.auth/login/github"
     },
     {
+       "route" : "/shoppingList/*",
+       "serve" : "/index.html",
+       "statusCode" : 200
+    }
+    {
       "route": "/logout",
       "serve": "/.auth/logout"
     },
