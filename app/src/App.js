@@ -8,40 +8,6 @@ import {
   Switch
 } from 'react-router-dom'
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Look at this really cool spinny thing we have here.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Everything is fine.
-//         </a>
-//         <a 
-//           className="App-link"
-//           href="https://authentication.mitalikarmarkar.net/.auth/login/facebook?post_login_redirect_uri=serene-evergreen-1262eeae.mitalikarmarkar.net"
-//         >
-//         Log in with Facebook - Mitali change - see the build system works - 11/8 10:12am!
-//         </a>
-
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-// const Home = () => (<div><h1>Welcome home</h1></div>)
-// const Home = () => (<div><h1>Welcome MITALI</h1><Link to='/about'>Go to about</Link></div>)
-// const About = ({ name }) => (<div><h1>About {name}</h1></div>)
-
 class App extends React.Component {
   render() {
     return (
@@ -59,28 +25,20 @@ class App extends React.Component {
                       <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/.auth/login/facebook">Login</a>
+                      <a class="nav-link" href="/.auth/login/facebook">Login</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/authenticated">Authenticated</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="https://delightful-bush-17ba0cbe.mitalikarmarkar.net/admin">Admin</a>
+                      <a class="nav-link" href="/about">Authenticated Content</a>
                     </li>
                   </ul>
                 </div>
               </nav>
                 <div class="jumbotron">
-                  <h1>Project Marmelade</h1>
+                  <h1>Static Web Apps - Explorer Interns 2020 Demo</h1>
                   <p>Test app</p>
                 </div>
-                <p>This is a test PR2 React app to test the MSHA.</p>
-                <p>This app was last updated 4/8/20 2:16pm.</p>
-                <p>Login first, then try to access authenticated and admin content.</p>
-                
-                
-                {/* <Home {...this.props} {...renderProps} /> */}
-                
+                <p>This is a test react app</p>
+                <p>This app was last updated 5/14/20 10:23pm.</p>                
             </div>
             )} />
         </Switch>
