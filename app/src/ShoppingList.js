@@ -34,7 +34,7 @@ class ShoppingList extends React.Component {
           fetchedData.map(shoppingItem => (
 			<div class="row marketing">
 				<div class="col">
-				  <h2><a className="App-link" href='/' >{shoppingItem.name} </a></h2>
+				  <h2>{shoppingItem.name} </h2>
 				  <h3>Makes {shoppingItem.quantity}</h3>
 				  <img src={shoppingItem.image} alt="" width="300" />
 				</div>
