@@ -35,8 +35,9 @@ class ShoppingList extends React.Component {
 			<div class="row marketing">
 				<div class="col">
 				  <h2>{shoppingItem.name} </h2>
-				  <h3>Makes {shoppingItem.quantity}</h3>
+				  <h4>Quantity: {shoppingItem.quantity}</h4>
 				  <img src={shoppingItem.image} alt="" width="300" />
+		  		<br/><br/>
 				</div>
 			</div>
 			)
