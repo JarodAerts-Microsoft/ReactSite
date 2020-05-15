@@ -8,7 +8,7 @@ module.exports = async function (context, req) {
                 "name": "milk",
                 "quantity": "1 gallon",
                 "url": "https://www.delish.com/cooking/recipe-ideas/recipes/a30276/strawberry-jam-recipe/",
-                "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/singleimagebug-strawberry-jam-1555107425.jpg?crop=1.00xw:0.947xh;0,0&resize=980:*"
+                "image": "https://www.dollargeneral.com/media/catalog/product/cache/0729a8e318a86bbdd225c6c8aa5967a3/1/5/15966601_main.jpg?crop=1.00xw:0.947xh;0,0&resize=980:*"
             },
             {
                 "name": "wheat bread",
