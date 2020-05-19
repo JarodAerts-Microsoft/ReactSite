@@ -20,7 +20,7 @@ jobs:
       id: builddeploy
       uses: mkarmark/staticstiesactionoryx@master
       with:
-        azurepages_api_token: ${{ secrets.AZUREPAGES_API_TOKEN_LIVELY_POND_07FC11A1E }}
+        azure_pages_api_token: ${{ secrets.AZUREPAGES_API_TOKEN_LIVELY_POND_07FC11A1E }}
         repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
         action: 'upload'
         ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
