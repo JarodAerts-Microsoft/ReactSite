@@ -39,5 +39,5 @@ jobs:
       id: closepullrequest
       uses: mkarmark/staticstiesactionoryx@master
       with:
-        azurepages_api_token: ${{ secrets.AZUREPAGES_API_TOKEN_LIVELY_POND_07FC11A1E }}
+        azurepages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_LIVELY_POND_07FC11A1E }}
         action: 'close'
