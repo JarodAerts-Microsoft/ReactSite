@@ -45,10 +45,6 @@
       "allowedRoles": ["authenticated", "admin"]
     },
     {
-      "route": "/.auth/login/google",
-      "statusCode": 404
-    },
-    {
       "route": "/.auth/complete",
       "serve": "/about",
       "statusCode": 429,
