@@ -53,10 +53,5 @@
       "route": "/me",
       "serve": "/.auth/me"
     },
-    {
-      "route": "/*", 
-      "serve": "/index.html", 
-      "statusCode": 200 
-    }
   ] 
 } 
