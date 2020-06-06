@@ -42,7 +42,7 @@
     },
     {
       "route": "/api/*",
-      "allowedRoles": ["authenticated", "admin"]
+      "allowedRoles": ["anonymous", "authenticated", "admin"]
     },
     {
       "route": "/.auth/complete",
