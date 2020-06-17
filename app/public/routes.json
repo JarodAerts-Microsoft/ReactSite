@@ -53,5 +53,14 @@
       "route": "/me",
       "serve": "/.auth/me"
     },
-  ] 
+  ],
+  "mimeTypes":
+  {
+    ".jpg": "application/json",
+    "png": "application/jpg"
+  },
+  "defaultHeaders":
+  {
+    "Content-Length": "100"
+  }
 } 
