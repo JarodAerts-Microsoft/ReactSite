@@ -53,17 +53,5 @@
       "route": "/me",
       "serve": "/.auth/me"
     },
-  ],
-  "mimeTypes":
-  {
-    ".jpg": "application/json",
-    "png": "application/jpg"
-  },
-  "defaultHeaders":
-  {
-    "Cache-Control": "",
-    "Etag": "7437589403298456543",
-    "Foo": "bar",
-    "X-Frame-Options": null
-  }
+  ]
 } 
