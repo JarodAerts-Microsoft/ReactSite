@@ -57,10 +57,13 @@
   "mimeTypes":
   {
     ".jpg": "application/json",
-    "pngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpng": "application/jpg"
+    "png": "application/jpg"
   },
   "defaultHeaders":
   {
-    "Cache-Control": ""
+    "Cache-Control": "",
+    "X-DNS-Prefetch-Control": "On",
+    "Foo": "bar",
+    "X-Frame-Options": null
   }
 } 
