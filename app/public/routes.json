@@ -57,10 +57,10 @@
   "mimeTypes":
   {
     ".jpg": "application/json",
-    "png": "application/jpg"
+    "pngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpngpng": "application/jpg"
   },
   "defaultHeaders":
   {
-    "": ""
+    "Cache-Control": ""
   }
 } 
