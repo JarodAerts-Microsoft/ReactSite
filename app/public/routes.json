@@ -61,6 +61,6 @@
   },
   "defaultHeaders":
   {
-    "Cache-Control": ""
+    "": ""
   }
 } 
