@@ -53,5 +53,7 @@
       "route": "/me",
       "serve": "/.auth/me"
     },
-  ]
+  ],
+  "mimeTypes": {},
+  "defaultHeaders: {}
 } 
