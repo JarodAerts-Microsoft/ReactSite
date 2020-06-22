@@ -57,7 +57,9 @@
   "mimeTypes":
   {
     ".jpg": "application/json",
-    "png": "application/jpg"
+    "png": "application/jpg",
+    "": "value",
+    "value": ""
   },
   "defaultHeaders":
   {
