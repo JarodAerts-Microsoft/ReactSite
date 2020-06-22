@@ -58,7 +58,7 @@
   {
     ".jpg": "application/json",
     "png": "application/jpg",
-    "": "value",
+    "goo": "value",
     "value": ""
   },
   "defaultHeaders":
