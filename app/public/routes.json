@@ -58,13 +58,13 @@
   {
     ".jpg": "application/json",
     "png": "application/jpg",
-    "goo12345678901234567890123456789012345678901234567890123456789012345678901234567890": "value",
   },
   "defaultHeaders":
   {
     "Cache-Control": "",
     "Etag": "7437589403298456543",
     "Foo": "bar",
-    "X-Frame-Options": null
+    "X-Frame-Options": null,
+    "": "haha"
   }
 } 
