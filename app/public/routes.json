@@ -67,7 +67,8 @@
     },
     {
       "route": "bar2020",
-      "serve": "/foo+bar"
+      "serve": "/foo+bar",
+      "statusCode": 302
     },
   ],
   "mimeTypes": {},
