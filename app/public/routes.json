@@ -54,7 +54,7 @@
       "serve": "/.auth/me"
     },
     {
-      "route": "/foo+bar"
+      "route": "/foo+bar",
       "serve": "/.auth/me"
     },
     {
