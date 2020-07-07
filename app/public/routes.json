@@ -55,11 +55,11 @@
     },
     {
       "route": "/foo+bar",
-      "serve": "/.auth/me"
+      "serve": "/.auth/google"
     },
     {
       "route": "/foo bar",
-      "serve": "/.auth/me"
+      "serve": "/.auth/login/facebook"
     },
     {
       "route": "foo2020",
