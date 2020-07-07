@@ -55,7 +55,7 @@
     },
     {
       "route": "/foo+bar",
-      "serve": "/.auth/google"
+      "serve": "/.auth/login/google"
     },
     {
       "route": "/foo bar",
