@@ -53,6 +53,22 @@
       "route": "/me",
       "serve": "/.auth/me"
     },
+    {
+      "route": "/foo+bar"
+      "serve": "/.auth/me"
+    },
+    {
+      "route": "/foo bar",
+      "serve": "/.auth/me"
+    },
+    {
+      "route": "foo2020",
+      "serve": "/foo1 bar1"
+    },
+    {
+      "route": "bar2020",
+      "serve": "/foo+bar"
+    },
   ],
   "mimeTypes": {},
   "defaultHeaders": {}
