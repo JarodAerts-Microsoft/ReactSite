@@ -54,10 +54,6 @@
       "serve": "/.auth/me"
     },
     {
-      "route": "/foo+bar",
-      "serve": "/.auth/login/google"
-    },
-    {
       "route": "/foo bar",
       "serve": "/.auth/login/facebook"
     },
