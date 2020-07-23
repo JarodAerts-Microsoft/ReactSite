@@ -22,7 +22,7 @@ jobs:
         id: builddeploy
         uses: mkarmark/staticstiesactionoryx@master
         with:
-          azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_JOLLY_SAND_01F7A451E }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_JOLLY_SAND_01F7A451E }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
@@ -41,5 +41,5 @@ jobs:
         id: closepullrequest
         uses: mkarmark/staticstiesactionoryx@master
         with:
-          azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_JOLLY_SAND_01F7A451E }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_JOLLY_SAND_01F7A451E }}
           action: "close"
