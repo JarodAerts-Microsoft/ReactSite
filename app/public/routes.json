@@ -69,7 +69,12 @@
     {      "route": "/News",
       "serve": "/news",
       "statusCode": 301
-}
+},
+    {
+      "route": "/news",
+      "serve": "/news",
+      "statusCode": 302
+    }
   ],
   "mimeTypes": {},
   "defaultHeaders": {}
