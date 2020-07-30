@@ -73,7 +73,8 @@
     {
       "route": "/news",
       "serve": "/news",
-      "statusCode": 302
+      "statusCode": 200,
+      "allowedRoles": ["authenticated"]
     }
   ],
   "mimeTypes": {},
