@@ -1,1 +1,8 @@
-{}
+{
+  "routes": {
+    "/News": {
+      "serve": "/news",
+      "statusCode": 301
+    }
+  }
+}
