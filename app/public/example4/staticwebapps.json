@@ -9,7 +9,7 @@
     "identityProviders": {
       "azureActiveDirectory": {
         "registration": {
-          "clientId": "haha"
+          "clientId": "haha2"
         }
       }
     }
