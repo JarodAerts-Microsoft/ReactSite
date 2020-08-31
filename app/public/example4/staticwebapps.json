@@ -11,6 +11,12 @@
         "registration": {
           "clientId": "haha2"
         }
+      },
+      "facebook": {
+        "registration": {
+          "appId": "684017655414345",
+          "appSecretSettingName": "FB_SECRET_Special"
+        }
       }
     }
   }
