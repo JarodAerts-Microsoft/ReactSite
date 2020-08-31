@@ -5,5 +5,13 @@
       "statusCode": 301
     }
   },
-  "auth": {}
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "clientId": "haha"
+        }
+      }
+    }
+  }
 }
