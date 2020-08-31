@@ -4,5 +4,8 @@
       "serve": "/news",
       "statusCode": 301
     }
+  },
+  "auth": {
+    
   }
 }
