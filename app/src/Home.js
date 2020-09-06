@@ -12,7 +12,7 @@ function Home() {
         </p>
         <a
           className="App-link"
-          href="/shoppingList/"
+          href="/api/GetList"
         >
           Let's try some functions!
         </a>
