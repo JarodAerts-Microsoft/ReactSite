@@ -78,7 +78,7 @@
     },
     {
         "route": "/",
-        "allowedRoles": ["super_admin"]
+        "allowedRoles": ["authenticated"]
     }
   ],
   "mimeTypes": {},
@@ -87,6 +87,11 @@
         {
           "errorType": "NotFound",
           "serve": "/404.html"
+        },
+     {
+          "errorType": "Unauthenticated",
+          "statusCode": "302",
+          "serve": "/.auth/login/aad"
         }
     ]
 } 
