@@ -75,6 +75,10 @@
       "serve": "/news",
       "statusCode": 200,
       "allowedRoles": ["authenticated"]
+    },
+    {
+        "route": "/",
+        "allowedRoles": ["super_admin"]
     }
   ],
   "mimeTypes": {},
