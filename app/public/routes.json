@@ -78,7 +78,7 @@
     },
     {
         "route": "/",
-        "allowedRoles": ["authenticated"]
+        "allowedRoles": ["super_admin"]
     }
   ],
   "mimeTypes": {},
