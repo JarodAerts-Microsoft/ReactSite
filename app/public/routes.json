@@ -66,10 +66,6 @@
       "serve": "/foo+bar",
       "statusCode": 302
     },
-    {      "route": "/News",
-      "serve": "/news",
-      "statusCode": 301
-},
     {
       "route": "/news",
       "serve": "/news",
