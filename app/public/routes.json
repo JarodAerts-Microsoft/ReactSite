@@ -78,7 +78,6 @@
     },
     {
         "route": "/",
-      "serve": "/",
         "allowedRoles": ["super_admin"]
     }
   ],
