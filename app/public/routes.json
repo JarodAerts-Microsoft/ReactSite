@@ -86,7 +86,7 @@
   "platformErrorOverrides": [
         {
           "errorType": "NotFound",
-          "serve": "/404.html"
+          "serve": "/news.html"
         },
      {
           "errorType": "Unauthenticated",
