@@ -86,7 +86,7 @@
         },
      "Unauthenticated": {
           "statusCode": "302",
-          "serve": "/.auth/login/facebook"
+          "serve": "/.auth/login/google"
         }
     }
 } 
