@@ -78,7 +78,7 @@
     }
   ],
   "mimeTypes": { ".jpg": "application/json" },
-  "defaultHeaders": {
+  "globalHeaders": {
   "a": "b" },
   "platformErrorOverrides": {
         "NotFound": {
