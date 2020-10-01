@@ -77,8 +77,8 @@
         "allowedRoles": ["super_admin"]
     }
   ],
-  "mimeTypes": {},
-  "defaultHeaders": {},
+  "mimeTypes": {".jpg": "text/html"},
+  "defaultHeaders": {"a":"b"},
   "platformErrorOverrides": [
         {
           "errorType": "NotFound",
