@@ -85,7 +85,7 @@
           "serve": "/news.html"
         },
      "Unauthenticated": {
-          "statusCode": "301",
+          "statusCode": "302",
           "serve": "/.auth/login/google"
         }
     },
