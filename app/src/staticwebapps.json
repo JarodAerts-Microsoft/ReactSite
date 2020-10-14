@@ -20,7 +20,7 @@
     },
     {
       "route": "/bar",
-      "statusCode": "301",
+      "statusCode": "302",
       "allowedRoles": ["admin"],
       "serve": "/about"
     },
