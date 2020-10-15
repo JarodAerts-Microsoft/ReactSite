@@ -1,7 +1,7 @@
 { 
   "routes": [ 
     {
-      "route": "/logi2n",
+      "route": "/login",
       "serve": "/.auth/login/github"
     },
     {
