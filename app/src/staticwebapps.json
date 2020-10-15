@@ -74,7 +74,7 @@
     },
     {
         "route": "/",
-        "allowedRoles": ["super_admin"]
+        "allowedRoles": ["authenticated"]
     }
   ],
   "mimeTypes": { ".jpg": "application/json" },
