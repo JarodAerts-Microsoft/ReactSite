@@ -26,7 +26,7 @@
     },
     {
       "route": "/baz",
-      "statusCode": "301",
+      "statusCode": "302",
       "serve": "/about"
     },
     {
