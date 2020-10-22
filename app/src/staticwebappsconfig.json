@@ -14,7 +14,7 @@
       "serve": "/.auth/logout"
     },
     {
-      "route": "/foo1",
+      "match-route": "/foo1",
       "statusCode": "200",
       "serve": "/about"
     },
