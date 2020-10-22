@@ -71,10 +71,6 @@
       "serve": "/news",
       "statusCode": 200,
       "allowedRoles": ["anonymous"]
-    },
-    {
-        "match-route": "/*",
-      "serve": "/index.html"
     }
   ],
   "mimeTypes": { ".jpg": "application/json" },
@@ -82,7 +78,8 @@
   "a": "b" },
   "platformErrorOverrides": {
         "404": {
-          "serve": "/news.html"
+          "statusCode": "200",
+          "serve": "/index.html"
         },
      "401": {
           "statusCode": "302",
