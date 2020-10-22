@@ -6,7 +6,7 @@
     },
     {
       "route": "/.auth/login/facebook",
-      "serve": "/",
+      "serve": "/news",
       "statusCode": "302"
     },
     {
