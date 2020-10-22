@@ -1,16 +1,16 @@
 { 
   "routes": [ 
     {
-      "route": "/login",
+      "match-route": "/login",
       "serve": "/.auth/login/github"
     },
     {
-       "route" : "/shoppingList/*",
+       "match-route" : "/shoppingList/*",
        "serve" : "/index.html",
        "statusCode" : 200
     },
     {
-      "route": "/logout",
+      "match-route": "/logout",
       "serve": "/.auth/logout"
     },
     {
@@ -19,61 +19,61 @@
       "serve": "/about"
     },
     {
-      "route": "/bar",
+      "match-route": "/bar",
       "statusCode": "301",
       "allowedRoles": ["admin"],
       "serve": "/about"
     },
     {
-      "route": "/baz",
+      "match-route": "/baz",
       "statusCode": "302",
       "serve": "/about"
     },
     {
-      "route": "/about/*",
+      "match-route": "/about/*",
       "statusCode": "200",
       "allowedRoles": ["authenticated", "admin"],
       "serve": "/about"
     },
     {
-      "route": "/admin",
+      "match-route": "/admin",
       "statusCode": "200",
       "serve": "/admin"
     },
     {
-      "route": "/api/*",
+      "match-route": "/api/*",
       "allowedRoles": ["anonymous", "authenticated", "admin"]
     },
     {
-      "route": "/.auth/complete",
+      "match-route": "/.auth/complete",
       "serve": "/about",
       "statusCode": 429,
     },
     {
-      "route": "/me",
+      "match-route": "/me",
       "serve": "/.auth/me"
     },
     {
-      "route": "/foo bar",
+      "match-route": "/foo bar",
       "serve": "/.auth/login/facebook"
     },
     {
-      "route": "foo2020",
+      "match-route": "foo2020",
       "serve": "/foo1 bar1"
     },
     {
-      "route": "bar2020",
+      "match-route": "bar2020",
       "serve": "/foo+bar",
       "statusCode": 302
     },
     {
-      "route": "/news",
+      "match-route": "/news",
       "serve": "/news",
       "statusCode": 200,
       "allowedRoles": ["anonymous"]
     },
     {
-        "route": "/*",
+        "match-route": "/*",
       "serve": "/index.html"
     }
   ],
