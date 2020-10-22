@@ -5,6 +5,23 @@
       "serve": "/.auth/login/github"
     },
     {
+      "route": "/.auth/login/facebook",
+      "serve": "/",
+      "statusCode": "302"
+    },
+    {
+      "route": "/.auth/login/google",
+      "statusCode": "302"
+    },
+    {
+      "route": "/.auth/login/aad",
+      "statusCode": "401"
+    },
+    {
+      "route": "/.auth/login/apple",
+      "statusCode": "404"
+    },
+    {
        "route" : "/shoppingList/*",
        "serve" : "/index.html",
        "statusCode" : 200
@@ -73,21 +90,10 @@
       "allowedRoles": ["authenticated"]
     },
     {
-        "route": "/",
-        "allowedRoles": ["super_admin"]
+        "route": "/*",
+        "serve": "/index.html"
     }
   ],
   "mimeTypes": {".jpg": "text/html"},
-  "defaultHeaders": {"a":"b"},
-  "platformErrorOverrides": [
-        {
-          "errorType": "NotFound",
-          "serve": "/news.html"
-        },
-     {
-          "errorType": "Unauthenticated",
-          "statusCode": "302",
-          "serve": "/.auth/login/aad"
-        }
-    ]
+  "defaultHeaders": {"a":"b"}
 } 
