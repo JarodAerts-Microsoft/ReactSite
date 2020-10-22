@@ -81,10 +81,10 @@
   "globalHeaders": {
   "a": "b" },
   "platformErrorOverrides": {
-        "NotFound": {
+        "404": {
           "serve": "/news.html"
         },
-     "Unauthenticated": {
+     "401": {
           "statusCode": "302",
           "serve": "/.auth/login/google"
         }
