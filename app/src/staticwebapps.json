@@ -5,7 +5,7 @@
       "serve": "/.auth/login/github"
     },
     {
-       "match-route" : "/shoppingList/*",
+       "match-route" : "/shoppingList2/*",
        "serve" : "/index.html",
        "statusCode" : 200
     },
