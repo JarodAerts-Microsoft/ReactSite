@@ -43,6 +43,11 @@
       "route": "/.auth/login/google",
       "statusCode": 404
     },
+    {
+      "route": "/api/PostList",
+      "methods": ["PUT", "POST"],
+      "allowedRoles": ["authenticated"]
+    }
   ],
   "mimeTypes": { ".jpg": "application/json" },
   "globalHeaders": {
