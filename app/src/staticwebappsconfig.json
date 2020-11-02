@@ -45,7 +45,7 @@
     },
     {
       "route": "/api/PostList",
-      "methods": ["authenticated"]
+      "methods": ["POST"]
     },
     {
       "route": "/.auth/login/google",
