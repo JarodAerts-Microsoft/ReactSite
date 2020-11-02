@@ -47,7 +47,7 @@
   "mimeTypes": { ".jpg": "application/json" },
   "globalHeaders": {
   "a": "b" },
-  "platformErrorOverrides": {
+  "responseOverrides": {
         "404": {
           "statusCode": "200",
           "rewrite": "/index.html"
