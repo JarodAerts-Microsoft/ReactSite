@@ -40,10 +40,6 @@
       "redirect": "/.auth/me"
     },
     {
-      "route": "/api/PostList",
-      "methods": ["POST"]
-    },
-    {
       "route": "/.auth/login/google",
       "statusCode": 404
     },
