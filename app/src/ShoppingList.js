@@ -9,7 +9,7 @@ class ShoppingList extends React.Component {
   }
 
   componentDidMount() {
-    fetch("/api/GetList")
+    fetch("/api/PostList", {method: "post"})
       .then(response => {
         return response.json()
       })
