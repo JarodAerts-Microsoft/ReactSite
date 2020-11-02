@@ -1,0 +1,79 @@
+{
+  { 
+  "routes": [ 
+    {
+      "route": "/login",
+      "rewrite": "/.auth/login/github"
+    },
+    {
+       "route" : "/shoppingList2/*",
+       "rewrite" : "/index.html"
+    },
+    {
+      "route": "/logout",
+      "rewrite": "/.auth/logout"
+    },
+    {
+      "route": "/foo1",
+      "redirect": "/about"
+    },
+    {
+      "route": "/bar",
+      "statusCode": "301",
+      "allowedRoles": ["admin"],
+      "redirect": "/about"
+    },
+    {
+      "route": "/baz",
+      "redirect": "/about"
+    },
+    {
+      "route": "/about/*",
+      "allowedRoles": ["authenticated", "admin"],
+      "rewrite": "/about"
+    },
+    {
+      "route": "/admin",
+      "rewrite": "/admin"
+    },
+    {
+      "route": "/api/*",
+      "allowedRoles": ["anonymous", "authenticated", "admin"]
+    },
+    {
+      "route": "/me",
+      "redirect": "/.auth/me"
+    },
+    {
+      "route": "/api/PostList",
+      "methods": ["authenticated"]
+    },
+    {
+      "route": "/.auth/login/google",
+      "statusCode": 404
+    },
+  ],
+  "mimeTypes": { ".jpg": "application/json" },
+  "globalHeaders": {
+  "a": "b" },
+  "platformErrorOverrides": {
+        "404": {
+          "statusCode": "200",
+          "rewrite": "/index.html"
+        },
+     "401": {
+          "statusCode": "302",
+          "redirect": "/.auth/login/google"
+        }
+    },
+  "auth": {
+    "identityProviders": {
+      "facebook": {
+        "registration": {
+          "appId": "684017655414345",
+          "appSecretSettingName": "FB_SECRET_Special"
+        }
+      }
+    }
+  }
+} 
