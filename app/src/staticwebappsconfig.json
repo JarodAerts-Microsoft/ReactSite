@@ -36,10 +36,6 @@
       "rewrite": "/admin"
     },
     {
-      "route": "/api/*",
-      "allowedRoles": ["anonymous", "authenticated", "admin"]
-    },
-    {
       "route": "/me",
       "redirect": "/.auth/me"
     },
