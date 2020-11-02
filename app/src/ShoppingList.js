@@ -34,9 +34,7 @@ class ShoppingList extends React.Component {
           fetchedData.map(shoppingItem => (
 			<div class="row marketing">
 				<div class="col">
-				  <h2>{shoppingItem.name} </h2>
-				  <h4>Quantity: {shoppingItem.quantity}</h4>
-				  <img src={shoppingItem.image} alt="" width="300" />
+				  <h2>{JSON.stringify(shoppingItem)} </h2>
 		  		<br/><br/>
 				</div>
 			</div>
