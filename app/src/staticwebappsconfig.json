@@ -40,7 +40,8 @@
       "redirect": "/.auth/me"
     },
     {
-      "route": "/.auth/login/google",
+      "route": "/.auth/login/aad",
+      "rewrite": "/news"
       "statusCode": 404
     },
     {
