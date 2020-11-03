@@ -41,8 +41,8 @@
     },
     {
       "route": "/.auth/login/aad",
-      "rewrite": "/news"
-      "statusCode": 404
+      "rewrite": "/news",
+      "statusCode": "404"
     },
     {
       "route": "/api/PostList",
