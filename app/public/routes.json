@@ -95,5 +95,7 @@
     }
   ],
   "mimeTypes": {".jpg": "text/html"},
-  "defaultHeaders": {"a":"b"}
+  "defaultHeaders": {"content-security-policy": "",
+    "server": "exampleheader",
+    "cache-control": "max-age=31536000"}
 } 
