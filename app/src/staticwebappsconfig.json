@@ -1,7 +1,7 @@
 { 
   "routes": [ 
     {
-      "route": "/login",
+      "route": "/logint",
       "rewrite": "/.auth/login/twitter"
     },
     {
