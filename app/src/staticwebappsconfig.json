@@ -40,11 +40,6 @@
       "redirect": "/.auth/me"
     },
     {
-      "route": "/.auth/login/facebook",
-      "rewrite": "/news",
-      "statusCode": "404"
-    },
-    {
       "route": "/api/PostList",
       "methods": ["PUT", "POST"],
       "allowedRoles": ["authenticated"]
