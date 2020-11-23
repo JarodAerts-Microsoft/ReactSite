@@ -1,99 +1,37 @@
 { 
-  "routes": [ 
+  "routes": [
     {
       "route": "/login",
-      "serve": "/.auth/login/facebook"
+      "serve": "/.auth/login/aad"
     },
     {
-      "route": "/.auth/login/facebook",
-      "serve": "/news",
-      "statusCode": "302"
+      "route": "/login/github",
+      "serve": "/.auth/login/github"
     },
     {
-      "route": "/.auth/login/google",
-      "statusCode": "302"
-    },
-    {
-      "route": "/.auth/login/aad",
+      "route": "/.auth/login/twitter",
       "statusCode": "401"
     },
     {
-      "route": "/.auth/login/apple",
-      "statusCode": "404"
+      "route": "/.auth/login/facebook",
+      "statusCode": "401"
     },
     {
-       "route" : "/shoppingList/*",
-       "serve" : "/index.html",
-       "statusCode" : 200
+      "route": "/.auth/login/google",
+      "statusCode": "401"
     },
     {
-      "route": "/logout",
-      "serve": "/.auth/logout"
-    },
-    {
-      "route": "/foo1",
-      "statusCode": "200",
-      "serve": "/about"
-    },
-    {
-      "route": "/bar",
-      "statusCode": "301",
-      "allowedRoles": ["admin"],
-      "serve": "/about"
-    },
-    {
-      "route": "/baz",
-      "statusCode": "302",
-      "serve": "/about"
-    },
-    {
-      "route": "/about/*",
-      "statusCode": "200",
-      "allowedRoles": ["authenticated", "admin"],
-      "serve": "/about"
-    },
-    {
-      "route": "/admin",
-      "statusCode": "200",
-      "serve": "/admin"
-    },
-    {
-      "route": "/api/*",
-      "allowedRoles": ["anonymous", "authenticated", "admin"]
-    },
-    {
-      "route": "/.auth/complete",
-      "serve": "/about",
-      "statusCode": 429,
-    },
-    {
-      "route": "/me",
-      "serve": "/.auth/me"
-    },
-    {
-      "route": "/foo bar",
-      "serve": "/.auth/login/facebook"
-    },
-    {
-      "route": "foo2020",
-      "serve": "/foo1 bar1"
-    },
-    {
-      "route": "bar2020",
-      "serve": "/foo+bar",
-      "statusCode": 302
-    },
-    {
-      "route": "/news",
-      "serve": "/news",
-      "statusCode": 200,
+      "route": "/*",
       "allowedRoles": ["authenticated"]
-    },
-    {
-        "route": "/*",
-        "serve": "/index.html"
     }
   ],
+    "platformErrorOverrides": [
+        {
+            "errorType": "Unauthenticated",
+            "statusCode": 302,
+            "serve": "/login"
+        }
+    ],
   "mimeTypes": {".jpg": "text/html"},
   "defaultHeaders": {"content-security-policy": "",
     "server": "exampleheader",
