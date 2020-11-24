@@ -14,7 +14,7 @@
     },
     {
       "route": "/foo1",
-      "redirect": "/about"
+      "redirect": "/api/GetList"
     },
     {
       "route": "/bar",
