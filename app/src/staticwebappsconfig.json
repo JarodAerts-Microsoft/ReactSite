@@ -51,7 +51,7 @@
   "responseOverrides": {
         "404": {
           "statusCode": "200",
-          "rewrite": "/index.html"
+          "rewrite": "/api/GetList"
         },
      "401": {
           "statusCode": "302",
