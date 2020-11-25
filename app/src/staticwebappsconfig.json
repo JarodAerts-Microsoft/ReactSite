@@ -52,10 +52,6 @@
         "404": {
           "statusCode": "200",
           "rewrite": "/api/GetList"
-        },
-     "401": {
-          "statusCode": "302",
-          "redirect": "/.auth/login/google"
         }
     }
 } 
