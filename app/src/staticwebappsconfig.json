@@ -53,5 +53,15 @@
           "statusCode": "200",
           "rewrite": "/api/GetList"
         }
+    },
+  "auth": {
+    "identityProviders": {
+      "facebook": {
+        "registration": {
+          "appId": "160184675274623",
+          "appSecretSettingName": "FB_SECRET_Special"
+        }
+      }
     }
+  }
 } 
