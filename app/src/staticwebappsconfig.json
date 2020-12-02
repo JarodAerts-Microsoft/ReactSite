@@ -5,10 +5,6 @@
       "rewrite": "/.auth/login/twitter"
     },
     {
-       "route" : "/shoppingList2/*",
-       "rewrite" : "/index.html"
-    },
-    {
       "route": "/logout",
       "rewrite": "/.auth/logout"
     },
