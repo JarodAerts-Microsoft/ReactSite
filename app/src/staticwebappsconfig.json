@@ -52,10 +52,35 @@
     },
   "auth": {
     "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "clientId": "cf978515-3bd2-4632-9a88-84610d244ada",
+          "clientSecret": "AAD_SECRET"
+        }
+      },
       "facebook": {
         "registration": {
-          "appId": "160184675274623",
-          "appSecretSettingName": "FB_SECRET_Special"
+          "appId": "684017655414345",
+          "appSecretSettingName": "FB_SECRET"
+        }
+      },
+      "gitHub": {
+        "registration": {
+          "clientId": "bd5bf1b4c2c1abdcc1db",
+          "clientSecretSettingName": "GITHUB_SECRET"
+        }
+      },
+      "google": {
+        "registration": {
+          "clientId": "456451366178-oneofrpdmomk72vn6drk3cv5f0na3qjs.apps.googleusercontent.com",
+          "clientSecretSettingName": "GOOGLE_SECRET"
+        }
+      },
+      "twitter": {
+        "registration": {
+          "consumerKey": "5JdTK2ZjUI0gYFJnXY7Yo5Iwh",
+          "consumerSecretSettingName": "TWITTER_SECRET"
         }
       }
     }
