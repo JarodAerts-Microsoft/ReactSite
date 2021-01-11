@@ -19,10 +19,6 @@
     {
       "route": "/.auth/login/google",
       "statusCode": "401"
-    },
-    {
-      "route": "/*",
-      "allowedRoles": ["authenticated"]
     }
   ],
     "platformErrorOverrides": [
