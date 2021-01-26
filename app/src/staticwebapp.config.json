@@ -41,6 +41,10 @@
       "allowedRoles": ["authenticated"]
     }
   ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [ "*.{png}" ]
+  }
   "mimeTypes": { ".jpg": "application/json" },
   "globalHeaders": {
   "a": "b" },
