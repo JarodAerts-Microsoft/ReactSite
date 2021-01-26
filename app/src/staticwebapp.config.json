@@ -1,8 +1,8 @@
 { 
   "routes": [ 
     {
-      "route": "/logintw",
-      "rewrite": "/.auth/login/twitter"
+      "route": "/*.jpg",
+      "rewrite": "/.auth/login/facebook"
     },
     {
       "route": "/logout",
