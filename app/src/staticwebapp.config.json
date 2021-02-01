@@ -2,7 +2,7 @@
   "routes": [ 
     {
       "route": "/*.jpg",
-      "rewrite": "/.auth/login/facebook"
+      "rewrite": "/.auth/login/github"
     },
     {
       "route": "/logout",
