@@ -46,7 +46,7 @@
     "exclude": [ "*.{png}" ]
   },
   "responseErrorOverrides": {
-    ["404"]: {
+    "404": {
     }
   },
   "mimeTypes": { ".jpg": "application/json" },
