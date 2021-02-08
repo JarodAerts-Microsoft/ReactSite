@@ -37,13 +37,17 @@
     },
     {
       "route": "/api/PostList",
-      "methods": ["PUT", "POST", "something"],
+      "methods": ["PUT", "POST"],
       "allowedRoles": ["authenticated"]
     }
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [ "*.{png}" ]
+  },
+  "responseErrorOverrides": {
+    ["404"]: {
+    }
   },
   "mimeTypes": { ".jpg": "application/json" },
   "globalHeaders": {
