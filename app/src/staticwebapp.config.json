@@ -1,7 +1,7 @@
 { 
   "routes": [ 
     {
-      "route": "/*/*.jpg",
+      "route": "/*.jpg",
       "rewrite": "/.auth/login/github"
     },
     {
