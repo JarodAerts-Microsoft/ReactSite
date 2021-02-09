@@ -10,7 +10,7 @@
     },
     {
       "route": "/foo1",
-      "redirect": "/api/GetList"
+      "redirect": "https://google.com/hi"
     },
     {
       "route": "/bar",
