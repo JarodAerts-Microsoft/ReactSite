@@ -55,34 +55,85 @@
   "auth": {
     "identityProviders": {
       "azureActiveDirectory": {
+        "enabled": true, // defaults to true on all the providers if the provider is configured to a non null value (i.e. not "azureActiveDirectory": null)
         "registration": {
           "openIdIssuer": "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
           "clientId": "cf978515-3bd2-4632-9a88-84610d244ada",
           "clientSecretSettingName": "AAD_SECRET"
-        }
+        },
+        "login": {
+          "loginParameters": []
+        },
+        "userDetailsClaim": "name" // the name of the claim that the provider will provide that contains the identity value you want to use as the "userDetails"
       },
       "facebook": {
+        "enabled": true,
         "registration": {
           "appId": "684017655414345",
           "appSecretSettingName": "FB_SECRET"
-        }
+        },
+        "login": {
+          "scopes": []
+        },
+        "userDetailsClaim": "email"
       },
       "gitHub": {
+        "enabled": true,
         "registration": {
           "clientId": "bd5bf1b4c2c1abdcc1db",
           "clientSecretSettingName": "GITHUB_SECRET"
-        }
+        },
+        "login": {
+          "scopes": []
+        },
+        "userDetailsClaim": "name"
       },
       "google": {
+        "enabled": true,
         "registration": {
           "clientId": "456451366178-oneofrpdmomk72vn6drk3cv5f0na3qjs.apps.googleusercontent.com",
           "clientSecretSettingName": "GOOGLE_SECRET"
-        }
+        },
+        "login": {
+          "scopes": []
+        },
+        "userDetailsClaim": "name"
       },
       "twitter": {
+        "enabled": true,
         "registration": {
-          "consumerKey": "5JdTK2ZjUI0gYFJnXY7Yo5Iwh",
+          "consumerKeySettingName": "TWITTER_CONSUMER_KEY",
           "consumerSecretSettingName": "TWITTER_SECRET"
+        },
+        "userDetailsClaim": "handle"
+      },
+      "apple": {
+        "enabled": true,
+        "registration": {
+          "clientIdSettingName": "APPLE_ID",
+          "clientSecretSettingName": "APPLE_SECRET"
+        },
+        "login": {
+          "scopes": []
+        },
+        "userDetailsClaim": "name"
+      },
+      "customOpenIdConnectProviders": {
+        "identityServer": {
+          "enabled": true,
+          "registration": {
+            "clientIdSettingName": "IDENTITY_SERVER_ID",
+            "clientCredential": {
+              "clientSecretSettingName": "APPLE_SECRET"
+            },
+            "openIdConnectConfiguration": {
+              "wellKnownOpenIdConfiguration": "https://identity-server.net/.well-known/openid-configuration"
+            }
+          },
+          "login": {
+            "scopes": []
+          },
+          "userDetailsClaim": "name"
         }
       }
     }
