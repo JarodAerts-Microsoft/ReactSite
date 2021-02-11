@@ -2,7 +2,7 @@
   "routes": [ 
     {
       "route": "/*.jpg",
-      "rewrite": "/.auth/login/github"
+      "rewrite": "https://www.google.com"
     },
     {
       "route": "/logout",
@@ -42,7 +42,7 @@
     }
   ],
   "navigationFallback": {
-    "rewrite": "/index.html",
+    "rewrite": "/api/GetList",
     "exclude": [ "*.{png}" ]
   },
   "responseErrorOverrides": {
@@ -55,7 +55,7 @@
   "auth": {
     "identityProviders": {
       "azureActiveDirectory": {
-        "enabled": true, // defaults to true on all the providers if the provider is configured to a non null value (i.e. not "azureActiveDirectory": null)
+        "enabled": true,
         "registration": {
           "openIdIssuer": "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
           "clientId": "cf978515-3bd2-4632-9a88-84610d244ada",
@@ -64,7 +64,7 @@
         "login": {
           "loginParameters": []
         },
-        "userDetailsClaim": "name" // the name of the claim that the provider will provide that contains the identity value you want to use as the "userDetails"
+        "userDetailsClaim": "name"
       },
       "facebook": {
         "enabled": true,
