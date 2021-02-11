@@ -2,7 +2,7 @@
   "routes": [ 
     {
       "route": "/*.jpg",
-      "rewrite": "https://www.google.com"
+      "redirect": "https://www.google.com"
     },
     {
       "route": "/logout",
