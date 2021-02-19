@@ -13,6 +13,10 @@
       "redirect": "https://google.com/hi"
     },
     {
+      "route": "/Foo1",
+      "redirect": "/foo1"
+    },
+    {
       "route": "/bar",
       "statusCode": "301",
       "allowedRoles": ["admin"],
