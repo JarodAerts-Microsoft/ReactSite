@@ -106,35 +106,6 @@
           "consumerSecretSettingName": "TWITTER_SECRET"
         },
         "userDetailsClaim": "handle"
-      },
-      "apple": {
-        "enabled": true,
-        "registration": {
-          "clientIdSettingName": "APPLE_ID",
-          "clientSecretSettingName": "APPLE_SECRET"
-        },
-        "login": {
-          "scopes": []
-        },
-        "userDetailsClaim": "name"
-      },
-      "customOpenIdConnectProviders": {
-        "identityServer": {
-          "enabled": true,
-          "registration": {
-            "clientIdSettingName": "IDENTITY_SERVER_ID",
-            "clientCredential": {
-              "clientSecretSettingName": "APPLE_SECRET"
-            },
-            "openIdConnectConfiguration": {
-              "wellKnownOpenIdConfiguration": "https://identity-server.net/.well-known/openid-configuration"
-            }
-          },
-          "login": {
-            "scopes": []
-          },
-          "userDetailsClaim": "name"
-        }
       }
     }
   }
