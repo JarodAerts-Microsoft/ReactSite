@@ -1,0 +1,35 @@
+{ 
+  "routes": [
+    {
+      "route": "/login",
+      "serve": "/.auth/login/aad"
+    },
+    {
+      "route": "/login/github",
+      "serve": "/.auth/login/github"
+    },
+    {
+      "route": "/.auth/login/twitter",
+      "statusCode": "401"
+    },
+    {
+      "route": "/.auth/login/facebook",
+      "statusCode": "401"
+    },
+    {
+      "route": "/.auth/login/google",
+      "statusCode": "401"
+    }
+  ],
+    "platformErrorOverrides": [
+        {
+            "errorType": "Unauthenticated",
+            "statusCode": 302,
+            "serve": "/login"
+        }
+    ],
+  "mimeTypes": {".jpg": "text/html"},
+  "defaultHeaders": {"content-security-policy": "",
+    "server": "exampleheader",
+    "cache-control": "max-age=31536000"}
+} 

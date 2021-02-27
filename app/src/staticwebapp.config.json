@@ -1,0 +1,112 @@
+{ 
+  "routes": [ 
+    {
+      "route": "/*.jpg",
+      "redirect": "https://www.google.com"
+    },
+    {
+      "route": "/logout",
+      "rewrite": "/.auth/logout"
+    },
+    {
+      "route": "/foo1",
+      "redirect": "https://google.com/hi"
+    },
+    {
+      "route": "/bar",
+      "statusCode": "301",
+      "allowedRoles": ["admin"],
+      "redirect": "/about"
+    },
+    {
+      "route": "/baz",
+      "redirect": "/about"
+    },
+    {
+      "route": "/about/*",
+      "allowedRoles": ["authenticated", "admin"],
+      "rewrite": "/about"
+    },
+    {
+      "route": "/admin",
+      "rewrite": "/admin"
+    },
+    {
+      "route": "/me",
+      "redirect": "/.auth/me"
+    },
+    {
+      "route": "/api/PostList",
+      "methods": ["PUT", "POST"],
+      "allowedRoles": ["authenticated"]
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/api/GetList",
+    "exclude": [ "*.{png}" ]
+  },
+  "responseErrorOverrides": {
+    "404": {
+    }
+  },
+  "mimeTypes": { ".jpg": "application/json" },
+  "globalHeaders": {
+  "a": "b" },
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "enabled": true,
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "clientId": "cf978515-3bd2-4632-9a88-84610d244ada",
+          "clientSecretSettingName": "AAD_SECRET"
+        },
+        "login": {
+          "loginParameters": []
+        },
+        "userDetailsClaim": "name"
+      },
+      "facebook": {
+        "enabled": true,
+        "registration": {
+          "appId": "684017655414345",
+          "appSecretSettingName": "FB_SECRET"
+        },
+        "login": {
+          "scopes": []
+        },
+        "userDetailsClaim": "email"
+      },
+      "gitHub": {
+        "enabled": true,
+        "registration": {
+          "clientId": "bd5bf1b4c2c1abdcc1db",
+          "clientSecretSettingName": "GITHUB_SECRET"
+        },
+        "login": {
+          "scopes": []
+        },
+        "userDetailsClaim": "name"
+      },
+      "google": {
+        "enabled": true,
+        "registration": {
+          "clientId": "456451366178-oneofrpdmomk72vn6drk3cv5f0na3qjs.apps.googleusercontent.com",
+          "clientSecretSettingName": "GOOGLE_SECRET"
+        },
+        "login": {
+          "scopes": []
+        },
+        "userDetailsClaim": "name"
+      },
+      "twitter": {
+        "enabled": true,
+        "registration": {
+          "consumerKeySettingName": "TWITTER_CONSUMER_KEY",
+          "consumerSecretSettingName": "TWITTER_SECRET"
+        },
+        "userDetailsClaim": "handle"
+      }
+    }
+  }
+} 
